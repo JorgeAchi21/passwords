@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ejercicios password:</h1>
+    password 1:<input type="password" name="pass1" id="pass1"> <button type="button" onclick="pass1()">aceptar</button>
+    <br>
+    <br>
+    <br>
+    password 2: <input type="password" name="pass2" id="pass2"> <button type="button" onclick="pass2()">aceptar</button>
+
+    <script>
+    function pass1(){
+        password="12345"
+        entrada = document.getElementById('pass1').value;
+        if( entrada == password) {
+            alert("password CORRECTO!!!")
+            alert("Entrada   : "+ entrada +"\nPassword: "+password)
+        } else {
+            alert("password INCORRECTO!!!")
+            alert("Entrada   : "+ entrada +"\nPassword: "+password)
+        }      
+    }
+    function pass2(){
+        password="fTPaonr"
+        entrada = document.getElementById('pass2').value;
+        if( entrada == password) {
+            alert("password CORRECTO!!!")
+            alert("Entrada   : "+ entrada +"\nPassword: "+password)
+        } else {
+            alert("password INCORRECTO!!!")
+            alert("Entrada   : "+ entrada +"\nPassword: "+password)
+        }      
+    }
+    </script>
+
+</body>
+</html>
